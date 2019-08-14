@@ -5,13 +5,13 @@ If an anomaly in the timing of a pulsar is noticed, this program can be used to 
 This program currently supports cutouts from VLASS, 2MASS, SDSS and Pan-STARRS (in the case that SDSS does not cover the requested RA and DEC). 
 
 TODO:  
-add marker for pulsar on jpegs (SDSS, PS)   
-ra and dec on jpegs doesnt work   
-size of image flawed-no universal instance variable  
-scaling off  
-code sometimes just hangs or stops working for no apparent reason   
-if vlass image is split between two frames i.e crab nebula, will crash. need to change size in that case  
-wrong/incomplete fits files returned in certain cases  
+Add a marker for pulsar on jpegs (SDSS, PS)   
+Ra and dec on jpegs doesnt work   
+Size of image flawed-no universal instance variable  
+Scaling off  
+Code sometimes hangs in case of position not found in a survey- needs more error handling   
+If the vlass image is split between two frames i.e with the crab nebula, it will crash. The image size needs to be changed in that case.  
+Wrong/incomplete fits files returned in certain cases    
 
 TEXTFILE FORMAT  
 ra(00h00m00s) dec(00d00m00s) name vlass 2mass sdss  
